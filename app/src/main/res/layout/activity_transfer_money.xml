@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="?attr/actionBarSize">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text=" Enter Customer to Transfer money"
+        android:textColor="#F7F8FB"
+        android:background="@color/teal_700"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Amount:"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/nm1"
+         />
+
+    <EditText
+        android:id="@+id/rs"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:gravity="end"
+        android:hint="Enter Amount"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="#A5A1A1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/money"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/money"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/money"
+        app:layout_constraintVertical_bias="0.815" />
+
+    <EditText
+        android:id="@+id/nm1"
+        android:layout_width="225dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/black"
+        android:textColorHint="#A5A1A1"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/money" />
+
+
+
+    <Button
+        android:id="@+id/ser1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search"
+        app:layout_constraintBottom_toBottomOf="@+id/nm1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nm1"
+        app:layout_constraintTop_toTopOf="@+id/nm1" />
+    app:navGraph="@navigation/mobile_navigation" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textColor="#201B1B"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <Button
+        android:id="@+id/done"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginRight="124dp"
+        android:text="Done"
+        app:layout_constraintRight_toRightOf="@+id/ser1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
